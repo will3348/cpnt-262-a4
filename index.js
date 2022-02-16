@@ -1,10 +1,7 @@
 const form = document.querySelector("form");
-
 const submitHandler = (event) => {
   event.preventDefault();
-
   const color = document.getElementById("dropdown");
-
   if (color.value === "blue") {
     form.style.backgroundColor = "blue";
   } 
@@ -21,5 +18,4 @@ const submitHandler = (event) => {
     form.style.backgroundColor = "red";
   } 
 };
-
 form.addEventListener("submit", submitHandler);
