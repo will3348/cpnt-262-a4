@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cpnt-260-a4</title>
+  <script src="./index.js" defer></script>
+  <style>
+    section {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    form * {
+      display: block;
+      margin: 25px auto;
+    }
+
+    #dropdown {
+      width: 55%;
+    }
+
+    legend {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    label {
+      font-weight: bolder;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <form action="#">
+      <fieldset>
+        <legend>Select Your Favourite Color</legend>
+        <label for="select">Selections</label>
+        <select id="dropdown" name="color">
+          <option value="selections" selected disabled>Select a Color</option>
+          <option value="blue" id="blue">Blue</option>
+          <option value="pink" id="pink">Pink</option>
+          <option value="yellow" id="yellow">Yellow</option>
+          <option value="green" id="green">Green</option>
+          <option value="red" id="red">Red</option>
+        </select>
+        <button type="submit" id="submit">Enter</button>
+      </fieldset>
+    </form>
+  </section>
+</body>
+</html>
